@@ -44,3 +44,4 @@ function buildCharts(sample) {
     Plotly.newPlot();
   });
 }
+
