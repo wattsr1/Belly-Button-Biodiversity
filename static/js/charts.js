@@ -86,7 +86,7 @@ function buildCharts(sample) {
     var hoverText = sampleLabels.slice(0,10).reverse();
     //console.log(hoverText)
 
-    // // 8. Create the trace for the bar chart. 
+    // 8. Create the trace for the bar chart. 
     var trace = {
       x: xticks,
       y: yticks,
@@ -98,14 +98,14 @@ function buildCharts(sample) {
 
     var barData = [trace];
       
-    // // 9. Create the layout for the bar chart. 
+    // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
       plot_bgcolor: 'lightgrey',
       paper_bgcolor: 'lightgrey',
       font: {size: 16, bold:true}
     };
-    // // 10. Use Plotly to plot the data with the layout. 
+    // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
 
 // Create Bubble charts
